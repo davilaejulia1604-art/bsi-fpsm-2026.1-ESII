@@ -14,9 +14,9 @@ class FakeEmail:
 
 if __name__ == "__main__":
     repo = RepositorioAssinantes()
-    email = FakeEmail()                        # de mentira, no lugar do SMTP
-    servico = ServicoNewsletter(repo, email)   # injeta o fake
+    enviador = FakeEmail()                     # de mentira, no lugar do SMTP
+    servico = ServicoNewsletter(repo, enviador)  # injeta o fake
     servico.enviar_edicao("Edicao teste")
 
-    print("Quem receberia:", email.enviados)
+    print("Quem receberia:", enviador.enviados)
     # esperado: ['ana@exemplo.com', 'bia@exemplo.com'] — sem e-mail de verdade!

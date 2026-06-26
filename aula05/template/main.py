@@ -6,6 +6,6 @@ from servico.newsletter import ServicoNewsletter
 
 if __name__ == "__main__":
     repo = RepositorioAssinantes()
-    email = ServidorSMTP()                     # o e-mail "de verdade"
-    servico = ServicoNewsletter(repo, email)   # injeta as pecas
+    enviador = ServidorSMTP()                  # o e-mail "de verdade"
+    servico = ServicoNewsletter(repo, enviador)   # injeta as pecas
     servico.enviar_edicao("Edicao #42 no ar!")

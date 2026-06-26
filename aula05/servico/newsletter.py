@@ -8,10 +8,10 @@ from enviador.smtp import ServidorSMTP
 
 class ServicoNewsletter:
     def __init__(self):
-        self.repo = RepositorioAssinantes()   # cria sozinho
-        self.email = ServidorSMTP()            # cria sozinho
+        self.repo     = RepositorioAssinantes()   # cria sozinho
+        self.enviador = ServidorSMTP()            # cria sozinho
 
     def enviar_edicao(self, texto):
         for a in self.repo.listar():
             if a.pode_receber():               # so envia a quem esta ativo
-                self.email.enviar(a.email, texto)
+                self.enviador.enviar(a.email, texto)
