@@ -34,7 +34,7 @@ class Academia:
 
         # TODO: troque o aviso de boas-vindas por uma chamada ao notificador.
         #   self.notificador.enviar( <para quem>, <a MESMA mensagem de boas-vindas da v1.0> )
-        ...
+        self.notificador.enviar(nome, f"Bem-vindo, {nome}! Sua matrícula foi realizada com sucesso.")
 
         print(f"Aluno {aluno['id']} matriculado.")   # TELA: este fica
 
