@@ -25,12 +25,6 @@ class VIP(Ingresso):
         return 35.0
 
 
-# ---------------------------------------------------------------
-# TODO (Parte B): adicione aqui a classe Cortesia
-#
-#   class Cortesia(Ingresso):
-#       def preco(self):
-#           return ???   # ingresso gratuito — qual é o valor?
-#
-# Depois, inclua um Cortesia() na venda do main.py e confira o total.
-# ---------------------------------------------------------------
+class Cortesia(Ingresso):
+    def preco(self):
+        return 0.0
