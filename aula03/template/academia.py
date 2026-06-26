@@ -52,7 +52,7 @@ class Academia:
 
         # TODO: troque o aviso de confirmação por uma chamada ao notificador.
         #   self.notificador.enviar( <para quem>, <a MESMA mensagem de check-in da v1.0> )
-        ...
+        self.notificador.enviar(nome, "<mesma mensagem da v1.0>")
 
         print(f"Check-in de {nome} registrado. Total: {aluno['checkins']}.")   # TELA: este fica
 
