@@ -9,6 +9,11 @@ from servico.newsletter import ServicoNewsletter
 #   - no __init__:  self.enviados = []
 #   - em enviar(self, para, texto):  self.enviados.append(para)
 class FakeEmail:
+    def __init__(self):
+        self.enviados = []
+
+    def enviar(self, para, texto):
+        self.enviados.append(para)
     pass   # <- apague o "pass" e escreva o __init__ e o enviar()
 
 
