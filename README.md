@@ -28,7 +28,7 @@ A jornada passa por **dívida técnica, princípios SOLID, testes, padrões de p
 | 5 | LSP, ISP e DIP | [📂 **aula05**](aula05/) |
 | **6** | **Prova escrita 1** | — |
 | 7 | Testes de Unidade, Integração e Cobertura | [📂 **aula07**](aula07/) |
-| 8 | TDD — Desenvolvimento Guiado por Testes | 🔒 *em breve* |
+| 8 | TDD — Desenvolvimento Guiado por Testes | [📂 **aula08**](aula08/) |
 | 9 | Padrões de Projeto (Factory, Facade, Strategy, Observer) | 🔒 *em breve* |
 | 10 | Refactoring, Code Smells e Pipeline CI/CD | 🔒 *em breve* |
 | **11** | **Prova escrita 2** | — |
