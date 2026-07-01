@@ -53,7 +53,9 @@ def test_observador_inscrito_recebe_o_evento():
 
 
 # ------------------------------------------------------------------
-# TODO (Parte B): adicione uma forma de entrega nova — o DRONE.
+# TODO def test_drone_cobra_taxa_fixa_mais_por_km():
+from acaiteria import EntregaDrone
+assert EntregaDrone().preco(2) == 14.0     
 #
 #   1. Em acaiteria.py, crie a estratégia (taxa fixa 8 + 3 por km):
 #
