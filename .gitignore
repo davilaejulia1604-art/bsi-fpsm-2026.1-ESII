@@ -15,3 +15,8 @@ solucao/
 solucao-professor/
 gabarito*/
 **/solucao/
+
+# pytest / cobertura / ruff (Aula 10)
+.pytest_cache/
+.coverage
+.ruff_cache/

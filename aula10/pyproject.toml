@@ -1,0 +1,11 @@
+# Configuração do linter (ruff) deste projeto.
+# O ruff confere ESTILO: linhas longas, imports não usados, variáveis não
+# usadas, espaços fora do lugar… Repare: ele NÃO reclama de "método longo"
+# nem de "nome ruim" — esses são code smells de DESIGN, que precisam de olho
+# humano e refactoring.
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "W"]
