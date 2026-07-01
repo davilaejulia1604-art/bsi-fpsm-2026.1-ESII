@@ -10,12 +10,16 @@
 # adicionar uma regra nova agora é só mais uma linha na tabela.
 def validar(senha):
     regras = [
-        (len(senha) >= 8,                 "precisa de pelo menos 8 caracteres"),
+        (len(senha) >= 8, "precisa de pelo menos 8 caracteres"),
         (any(c.isdigit() for c in senha), "precisa de um número"),
         (any(c.isupper() for c in senha), "precisa de uma letra maiúscula"),
+        (any(c.islower() for c in senha), "precisa de uma letra minúscula"),
     ]
+
     problemas = []
+
     for ok, mensagem in regras:
         if not ok:
             problemas.append(mensagem)
+
     return problemas

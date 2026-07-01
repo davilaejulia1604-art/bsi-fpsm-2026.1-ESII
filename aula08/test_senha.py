@@ -24,7 +24,8 @@ def test_senha_sem_maiuscula_avisa():
 
 
 # ------------------------------------------------------------------
-# TODO (Parte B): adicione UMA regra nova pelo ciclo do TDD (RED → GREEN).
+# TODO def test_senha_sem_minuscula_avisa():
+    assert validar("ABCDEFG1") == ["precisa de uma letra minúscula"]
 #
 #   1. RED  — escreva PRIMEIRO o teste abaixo e rode pytest (deve FALHAR):
 #
